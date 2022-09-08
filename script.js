@@ -1,10 +1,9 @@
-const blocks = document.querySelectorAll('p');
-const audioNum = document.querySelectorAll('.audio--numbers');
-
 const hello = document.getElementById('hello');
-const audioHello = document.getElementById('audio--hello');
-
 const good = document.getElementById('good');
+const allColors = document.querySelectorAll('p');
+
+const audioColors = document.querySelectorAll('audio');
+const audioHello = document.getElementById('audio--hello');
 const audioGood = document.getElementById('audio--good');
 
 hello.addEventListener('click', () => {
@@ -15,8 +14,8 @@ good.addEventListener('click', () => {
   audioGood.play();
 });
 
-for (let i = 0; i < blocks.length; i++) {
-  blocks[i].addEventListener('click', () => {
-    audioNum[i].play();
+for (let i = 0; i < allColors.length; i++) {
+  allColors[i].addEventListener('click', () => {
+    audioColors[i].play();
   });
 }

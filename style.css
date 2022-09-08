@@ -18,7 +18,6 @@ h1 {
 }
 
 .container  {
-    background-color: lightblue;
     margin: 0 auto;
     padding: 20px;
     width: 350px;
@@ -32,12 +31,13 @@ h1 {
 
 p {
     font-family: inherit;
-    font-size: 3.5rem;
     font-weight: bold;
     background-color: #fff;
-    width: 80px;
+    width: 40%;
     height: 80px;
-    border-radius: 15px;
+    border: 2px solid #333;
+    border-radius: 99px;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.05);
     flex-shrink: 0;
     display: flex;
     justify-content: center;
@@ -58,13 +58,13 @@ p:active {
 
 button {
     color: inherit;
-    background-color: lightcoral;
+    background-color: #fff;
     font-family: inherit;
     font-size: 2rem;
     letter-spacing: 2px;
     padding: 10px;
     margin: 15px;
-    border: 0;
+    border: 2px solid #d1d5db;
     border-radius: 15px;
     width: 100px;
     min-width: fit-content;
@@ -72,4 +72,41 @@ button {
 
 button:hover {
     cursor: pointer;
+    background-color: #d1d5db;
+    filter: brightness(1.1);
+    transform: scale(1.02);
+    transition: transform, 0.2s;
+}
+
+/* colors */
+#red {
+    background-color: #f87171;
+}
+
+#orange {
+    background-color: #fdba74;
+}
+#yellow {
+    background-color: #fef08a;
+}
+#green {
+    background-color: #86efac;
+}
+#blue {
+    background-color: #93c5fd;
+}
+#purple {
+    background-color: #d8b4fe;
+}
+#pink {
+    background-color: #f9a8d4;
+}
+#brown {
+    background-color: #C4A484;
+}
+#white {
+    background-color: #fff;
+}
+#black {
+    background-color: #333;
 }
